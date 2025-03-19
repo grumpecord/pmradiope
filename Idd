@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Radio - Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1e1e1e;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background: #d32f2f;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #d32f2f;
+        }
+        .container {
+            padding: 20px;
+        }
+        .radio-box {
+            background: #d32f2f;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px;
+            margin: 20px auto;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+        }
+        .radio-box:hover {
+            background: #b71c1c;
+        }
+        /* Hacemos el reproductor completamente invisible */
+        .hidden-player {
+            width: 1px;
+            height: 1px;
+            position: absolute;
+            left: -9999px;
+        }
+        footer {
+            background: #222;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        PM RADIO - Inicio
+    </header>
+    
+    <nav>
+ <a href="https://peruvianmilennialradiope.blogspot.com/">Inicio</a>
+        <a href="https://pmrprogramacion.blogspot.com/">Programación</a>
+        <a href="https://pmcontacto.blogspot.com/">Contacto</a>
+       <a href="https://pminformacion.blogspot.com/">Informacion</a>
+    </nav>
+    
+    <div class="container">
+        <h2>Escucha en Vivo - EN EXCLUSIVA (Valentino Naufrago -Chicas En Paris )</h2>
+        <div class="radio-box" onclick="playRadio()">PM Radio</div>
+        
+        <!-- Reproductor invisible de YouTube -->
+        <iframe id="radioPlayer" class="hidden-player"
+            src=""
+            frameborder="0"
+            allow="autoplay">
+        </iframe>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024-2025 PM Radio - Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function playRadio() {
+            var player = document.getElementById("radioPlayer");
+            player.src = "https://www.youtube.com/embed/videoseries?list=PLj6WI8-wjXMlSvONah1a2pvbJF8Luc2U1&autoplay=1&loop=1&index=0&controls=0&showinfo=0&modestbranding=1";
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos de PM Radio</title>
+    <style>
+        /* Estilos básicos */
+        .carrusel-container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carrusel {
+            display: flex;
+            transition: transform 1s ease-in-out;
+            width: 400%;
+        }
+
+        .carrusel-item {
+            min-width: 100%;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .descargar-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            background: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .descargar-btn:hover {
+            background: #cc0000;
+        }
+
+        /* Controles */
+        .carrusel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+    </style>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos de PM Radio</title>
+    <style>
+        /* Estilos básicos */
+        .carrusel-container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carrusel {
+            display: flex;
+            transition: transform 1s ease-in-out;
+            width: 400%;
+        }
+
+        .carrusel-item {
+            min-width: 100%;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .descargar-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            background: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .descargar-btn:hover {
+            background: #cc0000;
+        }
+
+        /* Controles */
+        .carrusel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+    </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos de PM Radio</title>
+    <style>
+        /* Estilos básicos */
+        .documentos-container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .documento {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        .descargar-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #ff0000;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .descargar-btn:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos de PM Radio</title>
+    <style>
+        /* Estilos básicos */
+        .documentos-container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .documento {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        .documento h3 {
+            color: black; /* Texto en negro */
+        }
+
+        .descargar-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .descargar-btn:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos de PM Radio</title>
+    <style>
+        /* Estilos básicos */
+        .documentos-container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .documento {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        .documento h3 {
+            color: black; /* Texto en negro */
+        }
+
+        .descargar-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .descargar-btn:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <p>LEER OBLIGATORIAMENTE ESTOS CUATRO DOCUMENTOS</p>
+        <div class="documentos-container">
+            <div class="documento">
+                <h3>Reglamento de PM Radio</h3>
+                <a href="https://drive.google.com/file/d/1BjEi74MZdoAHZEDDdn_R18_ZPLw_RZ_o/view?usp=drive_link" class="descargar-btn" download>Descargar</a>
+            </div>
+            <div class="documento">
+                <h3>Cesión de Derechos Simplificado</h3>
+                <a href="https://drive.google.com/file/d/1BsIJFNLUqzBQ8i-V1ccslPTzMsg3xa6A/view?usp=drive_link" class="descargar-btn" download>Descargar</a>
+            </div>
+            <div class="documento">
+                <h3>Cesión de Derechos Completo</h3>
+                <a href="https://drive.google.com/file/d/1BnuTKBpcGv5sD2qQtSODgCDH_AEvpa0m/view?usp=drive_link" class="descargar-btn" download>Descargar</a>
+            </div>
+            <div class="documento">
+                <h3>Autorización de Transmisión
+              (DOC IMPORTANTE)</h3>
+                <a href="https://drive.google.com/file/d/1Aw6eRV7g7LcEK-BsslTJTRfPj3Cqys5x/view?usp=drive_link" class="descargar-btn" download>Descargar</a>
+            </div>
+          <a href="https://sonarkanetwork.blogspot.com">Sonarka Network</a>
+        </div>
+    </footer>
+</body>
+</html>
